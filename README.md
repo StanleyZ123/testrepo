@@ -24,6 +24,8 @@ public class CommandHelloWorld extends HystrixCommand<String> {
 ```
 
 ## Description
+Here’s a sentence with `inline code`.
+
 
 An in-depth paragraph about your project and overview of use.
 
