@@ -1,6 +1,27 @@
-# Project Test
+# Documentation - Individual
 
 Simple overview of use/purpose.
+
+## Hello World!
+
+Code to be isolated is wrapped inside the run() method of a HystrixCommand similar to the following:
+
+```java
+public class CommandHelloWorld extends HystrixCommand<String> {
+
+    private final String name;
+
+    public CommandHelloWorld(String name) {
+        super(HystrixCommandGroupKey.Factory.asKey("ExampleGroup"));
+        this.name = name;
+    }
+
+    @Override
+    protected String run() {
+        return "Hello " + name + "!";
+    }
+}
+```
 
 ## Description
 
