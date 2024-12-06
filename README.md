@@ -6,7 +6,7 @@ Simple overview of use/purpose.
 
 Code to be isolated is wrapped inside the run() method of a HystrixCommand similar to the following:
 
-```java
+```php
 public class CommandHelloWorld extends HystrixCommand<String> {
 
     private final String name;
